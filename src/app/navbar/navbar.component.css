@@ -1,0 +1,30 @@
+/* Estilos para las líneas animadas en los enlaces */
+.nav-animated::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .nav-animated:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+  /* Estilos y animación para el botón de inicio de sesión */
+  .login-btn {
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .login-btn:hover {
+    background: white !important;
+    color: #40568d !important;
+    transform: scale(1.05);
+  }
