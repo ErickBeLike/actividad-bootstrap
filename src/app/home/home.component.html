@@ -1,19 +1,20 @@
-<app-navbar />
+<app-navbar/>
 
-<!-- home.component.html -->
+<!-- Hero Section con animación de fade -->
 <div class="hero-section text-center text-white"
-  style="background: linear-gradient(135deg, #0f172a, #1e293b); padding: 60px;">
+  style="background: linear-gradient(135deg, #0f172a, #1e293b); padding: 60px;" @fade>
   <h1 style="font-weight: bold; font-size: 2.5rem;">Rauw Alejandro</h1>
   <p style="font-size: 1.2rem;">Explora la vida, los álbumes y redes sociales de uno de los grandes del reggaetón.</p>
   <button class="btn btn-primary" style="border-radius: 20px; padding: 10px 20px; font-size: 1rem;">Explora más</button>
 </div>
 
-<div class="container text-center mt-5">
+<!-- Contenedor principal con animación de stagger para las cards -->
+<div class="container text-center mt-5" @fadeInStagger>
   <h2 style="font-weight: bold; font-size: 2rem;">Descubre más sobre Rauw Alejandro</h2>
 
   <div class="row">
     <!-- Bibliografía -->
-    <div class="col-md-4">
+    <div class="col-md-4 mb-3 mt-4">
       <div class="card p-4 shadow-sm" style="border-radius: 15px;">
         <img src="rauleeto.png" alt="Rauw Alejandro" class="img-fluid rounded" style="border-radius: 10px;">
         <h3 style="margin-top: 15px; font-weight: bold;">Bibliografía</h3>
@@ -25,7 +26,7 @@
     </div>
 
     <!-- Top Álbumes -->
-    <div class="col-md-4">
+    <div class="col-md-4 mb-3 mt-4">
       <div class="card p-4 shadow-sm" style="border-radius: 15px;">
         <h3 style="font-weight: bold;">Top Álbumes</h3>
         <div class="row">
@@ -50,7 +51,7 @@
     </div>
 
     <!-- Redes Sociales -->
-    <div class="col-md-4">
+    <div class="col-md-4 mb-5 mt-4">
       <div class="card p-4 shadow-sm" style="border-radius: 15px;">
         <h3 style="font-weight: bold;">Redes Sociales</h3>
         <p>¡Escúchalo donde gustes!</p>
